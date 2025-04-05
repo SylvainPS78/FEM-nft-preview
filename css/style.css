@@ -7,6 +7,13 @@
     box-sizing: border-box;
 }
 
+*:focus {
+    border: 2px solid var(--cyan);
+    outline: none;
+    border-radius: var(--border-radius-small);
+    padding: 0 2px;
+}
+
 /* ====== Variables ====== */
 :root {
     --soft-blue: hsl(215, 51%, 70%);
