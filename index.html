@@ -3,27 +3,46 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Equilibrium NFT preview website">
+    <meta name="description" content="Preview card for an Equilibrium NFT. Displays details about the NFT, including its name, description, price, and remaining time.">
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" aria-label="Website favicon">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300,400,600&display=swap" rel="stylesheet">
 
     <title>Frontend Mentor | NFT preview card component</title>
   </head>
 
   <body>
+      <main>
+        <article class="c-card">
+          <div class="c-card__img-wrapper">
+            <img class="c-card__img" src="./images/image-equilibrium.jpg" alt="A shimmering cube floats on a reflective surface.">
+            <div class="card__img-overlay">
+              <img src="./images/icon-view.svg" alt="Eye icon" aria-hidden="true">
+            </div>
+          </div>
+          <h1 class="c-card__title">Equilibrium #3429</h1>
+          <p class="c-card__description">Our Equilibrium collection promotes balance and calm.</p>
+          <div class="l-flex">
+            <div class="l-flex__left">
+              <img class="c-card__price-icon" src="./images/icon-ethereum.svg" alt="" aria-hidden="true">
+              <div class="c-card__price-value">0.041 ETH</div>
+            </div>
+            <div class="l-flex__right">
+              <img class="c-card__clock-icon" src="./images/icon-ethereum.svg" alt="" aria-hidden="true">
+              <div class="c-card__time-remaining">3 days left</div>
+            </div>
+          </div>
 
-    Equilibrium #3429
+          <div class="c-card__author">
+            <img class="c-card__author__avatar" src="./images/image-avatar.png" alt="Avatar of Jules Wyvern">
+            <p class="c-card__author__text">Creation of <span class="c-card__author_name">Jules Wyvern</span></p>
+          </div>
+        </article>
+      </main>
 
-    Our Equilibrium collection promotes balance and calm.
-
-    0.041 ETH
-    3 days left
-    
-    Creation of Jules Wyvern
 
     <footer class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
